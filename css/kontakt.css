@@ -1,0 +1,57 @@
+/* INMPORTS START */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import "../components/hero.css";
+/* IMPORTS END */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* FORM START */
+.contact-container{
+    background-color: #2E2925;
+    height: 739px;
+    color: #CCC4BC;
+    font-family: 'Merriweather', serif;
+}
+
+.contact-txt{
+    display: flex;
+    justify-content: space-between;
+    width: 1144px;
+    margin: auto;
+}
+
+.first-contact-section, .sec-contact-section{
+    padding-top: 67px;
+    width: 50%;
+}
+
+.sec-contact-section p{
+    font-weight: bold;
+    padding-top: 0;
+}
+
+.icon-wrapper{
+    display: flex;
+    padding-bottom: 35px;
+}
+
+.icons{
+    color: #f1b356;
+    padding-right: 40px;
+}
+
+.contact-field-1, .contact-field-2, .contact-field-3{
+    border: 1px solid #CCC4BC;
+}
+
+.valid{
+    color: #f1b356;
+    background-color: #2E2925;
+    
+}
+/* FORM END */

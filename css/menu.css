@@ -1,0 +1,87 @@
+/* IMPORTS */
+@import "../components/hero.css";
+/* IMPORTS */
+
+/* MENU HERO IMG START */
+.hero-menu-img{
+    top: -450px;
+}
+/* MENU HERO IMG END */
+
+/* MENU SECTION START */
+.section-wrapper{
+    background-color: #2e2925;
+    width: 100%;
+}
+
+.menu-txt-wrapper{
+    display: flex;
+}
+
+.menu-titles{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: white;
+    font-size: 48px;
+}
+
+.menu-kat{
+    width: 200px;
+    height: 200px;
+    margin: 5rem 0;
+}
+
+#menu-sec {
+    display: flex;
+    margin: auto;
+    width: 1144px;
+}
+
+.menuImgWrapper, .menuTxtWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuImgWrapper {
+    width: 30%;
+    height: 2000px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuTxtWrapper {
+    width: 70%;
+    padding-top: 90px;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+.dish-Headings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    height: 20px;
+}
+
+.menu-Paragraphs {
+    color: white;
+    font-size: 18px;
+}
+
+.menu-Prices {
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.menu-content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+/* MENU SECTION END */

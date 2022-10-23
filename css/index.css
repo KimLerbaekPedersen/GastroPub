@@ -1,0 +1,366 @@
+/* FONT INMPORTS START */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* FONT IMPORTS END */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* TO TOP BUTTON START */
+#toTop{
+    display: none;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    bottom: 11px;
+    right: 13px;
+}
+/* TO TOP BUTTON END */
+
+/* MODAL STYLE START */
+#mainModal{
+   position: fixed;
+   display: none;
+   top: 50%;
+   left: 50%;
+   width: 100%;
+   height: 100%;
+   padding-top: 90px;
+   transform: translate(-50%, -50%);
+   background-color: rgba(0,0,0,0.6);
+}
+
+.closeBtn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 11%;
+    margin-left: 35px;
+}
+
+.close-btn-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subModal{
+    display: flex;
+    background-color: #2E2925;
+    color: #CCC4BC;
+    width: 670px;
+    height: 670px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;    
+}
+
+.modal-header{
+    font-family: 'Merriweather', serif;
+}
+
+.modalWrapper{
+    display: flex;  
+    flex-direction: column;
+}
+
+.name{
+    background: url(../assets/img/person.png) no-repeat left;
+    background-color: #211E1B;
+    background-size: 30px;
+    background-position: left 20px top 15px;
+}
+
+.tlf{
+    background: url(../assets/img/phone.png) no-repeat left;
+    background-color: #211E1B;
+    background-size: 30px;
+    background-position: left 20px top 15px;
+}
+
+.date{
+    padding-left: 65px;
+    background: url(../assets/img/calendar.png) no-repeat left;
+    background-color: #211E1B;
+    background-size: 30px;
+    background-position: left 20px top 15px;
+} 
+
+.message{
+    background: url(../assets/img/Pencil.png) no-repeat left;
+    background-color: #211E1B;
+    background-size: 30px;
+    background-position: left 20px top 15px;
+}
+
+input{
+    height: 60px;
+}
+
+input[type="tel"], input[type="text"], input[type="name"], textarea {
+    padding-left:60px;
+    font-size: 18px;
+}
+
+textarea{
+    padding-top: 15px;
+    resize: none;
+    height: 179px;
+}
+
+input, textarea{
+    background-color: #211E1B;
+    color: #CCC4BC;
+    font-family: 'Crimson Pro', serif;
+    width: 513px;
+    border-radius: 30px;
+    margin: 15px 0;
+    border: none;
+}
+/* MODAL STYLE END */
+
+/* NAVBAR START */
+.logo{
+    width: 68px;
+    height: 62px;
+    filter: invert();
+}
+
+.sticky{
+    background-color: #211E1B;
+    transition: 1s ease;
+}
+
+.navBar{
+    font-family: 'Merriweather', serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#subNav{
+    display: flex;
+    position: fixed;
+    height: 68px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.nav-wrapper{
+    width: 1144px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    padding: 15px;
+    list-style: none;
+}
+
+.dropDown-content{
+    display: none;
+    background-color: #211E1B;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.dropDown-content a{
+    color: #CCC4BC;
+    padding: 10px 35px;
+    text-decoration: none;
+    display: block;
+}
+
+.about:hover .dropDown-content{
+    display: block;
+}
+
+.dropDownArrow{
+    height: 10px;
+    width: 11px;
+}
+
+.btn{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    background-color: #F1B356;
+    color: #000000;
+    width: 140px;
+    height: 43px;
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+}
+/* NAVBAR END */
+
+/* LANDINGPAGE START */
+main, .sec-container, .sec-two-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/img/mainsite-waiter.jpg), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1144px;
+    height: 100vh;
+    margin: auto;
+    color: white;
+    line-height: 30px;
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 84px;
+    margin-bottom: 35px;
+}
+
+p{
+    font-family: 'Crimson Pro', serif;
+    padding: 23px 0 39px 0; 
+    font-size: 18px;
+}
+
+button{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #F1B356;
+    width: 170px;
+    height: 54px;
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+}
+/* LANDINGPAGE END */
+
+/* SECTION ONE START */
+.sec-container{
+    background-image: url(../assets/img/mainSite-food.jpg), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+}
+/* SECTION ONE END */
+
+/* SECTION TWO START */
+.sec-two-container{
+    background-image: url(../assets/img/mainSite-interior01.jpg), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+}
+/* SECTION TWO END */
+
+/* FOOTER START */
+footer{
+    display: flex;
+    justify-content: center;
+    height: 401px;
+    color: #CCC4BC;
+    background-color:#211E1B;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 1144px;
+}
+
+footer h2{
+    font-family: 'Merriweather', serif;
+    font-size: 25px;    
+}
+
+svg{
+    fill: #CCC4BC;
+    width: 60px;
+    height: 60px;
+    margin: 20px 20px 0 0;
+}
+
+.face:hover{
+    fill: #00C2FF;
+    transition: 1s ease;
+}
+
+.insta:hover{
+    fill: url(#min-gradient);
+}
+
+.twitter:hover{
+    fill: #8BFBFF;
+    transition: 1s ease;
+}
+
+#kontakt-data{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.kontaktWrapper{
+    font-family: 'Crimson Pro', serif;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.gps, .phone-footer{
+    margin-right: 16px;
+    width: 25px;
+    height: 25px;
+}
+/* FOOTER END */
+
+@media screen and (max-width: 940px) {
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-2{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gps, .phone-footer{
+        margin-right: 2px;
+    }
+
+    .kontaktWrapper{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-container{
+        align-items: center;
+        width: 100vw;
+    }
+
+}
+
+@media only screen and (max-width: 578px ) {
+    .test{
+        text-align: center;
+    }
+}
